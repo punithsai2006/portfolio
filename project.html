@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +22,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px 5%;
+            background: white;
         }
 
         .nav-left img {
-            width: 50%;
+            width: 150px;
         }
 
         .nav-right a {
             text-decoration: none;
             color: black;
             font-size: 16px;
-            margin: 5px;
+            margin: 10px;
+            transition: 0.3s;
         }
 
         .nav-right a:hover {
@@ -44,9 +47,11 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 40px;
-            margin-top: 20px;
         }
 
+        #project h2{
+            margin-top: 20px;
+        }
         .project-item-1 img {
             height: 200px;
             width: 200px;
@@ -54,8 +59,17 @@
             max-width: 100%;
         }
 
+        footer {
+            position: relative;
+            text-align: center;
+        }
+
         .foot {
             text-align: center;
+        }
+
+        .foot .logo a {
+            text-decoration: none;
         }
 
         .foot .logo img {
@@ -70,6 +84,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -87,15 +102,15 @@
     <hr>
     <nav class="project" id="project">
         <h2>My Projects</h2>
-        <p>I have completed one projects using Python in Semester 1.</p>
-        <p>Currently, I am working on a Java-based project for Semester 2.</p>
         <div class="projects-container">
             <div class="project-item-1">
                 <h3>Project</h3>
                 <p>Number Guessing Game</p>
-                <a href="https://githubtocolab.com/punithsai2006/project/blob/main/Numbergussinggame.ipynbt"><img src="num gam.jpeg" class="proimg" alt="Number Guessing Game project"></a>
+                <a href="http://localhost:8888/notebooks/project_HTML.ipynb"><img src="num gam.jpeg" class="proimg"
+                        alt="Number Guessing Game project"></a>
             </div>
         </div>
+        <p>Currently, I am working on a Java-based project for Semester 2.</p>
     </nav>
     <hr>
     <footer>
@@ -121,4 +136,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
