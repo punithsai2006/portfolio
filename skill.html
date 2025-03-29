@@ -22,18 +22,20 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 20px 7px;
+            padding: 10px 5%;
+            background: #fff;
         }
 
         .nav-left img {
-            width: 50%;
+            width: 150px;
         }
 
         .nav-right a {
             text-decoration: none;
             color: black;
             font-size: 16px;
-            margin: 5px;
+            margin: 10px;
+            transition: 0.3s;
         }
 
         .nav-right a:hover {
@@ -49,27 +51,72 @@
             padding: 50px;
         }
 
-        .skill-list {
-            list-style-type: none;
-            text-align: center;
-            
-        }
-        li{
-            padding-bottom: 15px;
-        }
-        .foot {
+        .skills {
             text-align: center;
         }
 
-        .foot .logo img {
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 20px;
+        }
+
+        .s1, .s2 {
+            width: 200px;
+            padding: 20px;
+            border-radius: 10%;
+            box-shadow: 5px 5px 5px 5px lightblue;
+        }
+
+        .skill-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding-bottom: 15px;
+        }
+
+        footer {
+            position: relative;
+            text-align: center;
+            background-color: white;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .logo a img {
             width: 30px;
             border-radius: 50%;
-            margin-right: 15px;
             transition: transform 0.3s;
         }
 
-        .foot .logo img:hover {
+        .logo a img:hover {
             transform: scale(1.5);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-right {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -77,7 +124,7 @@
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <img src="portfoilio.png">
+                <img src="portfoilio.png" alt="Portfolio Logo">
             </div>
             <div class="nav-right">
                 <a href="index.html">Home</a>
@@ -91,18 +138,25 @@
     <main>
         <nav class="skills" id="skill">
             <h2>Skills</h2>
-            <ul class="skill-list">
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>C (Basics)</li>
-            </ul>
+            <div class="skills-container">
+                <div class="s1">
+                    <h4>Programming</h4>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C (Basics)</li>
+                    </ul>
+                </div>
+                <div class="s2">
+                    <h4>Web Development</h4>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <p>
-            I have learnt python in my first semester which was in my curriculum.<br><br>
-            I have been learning HTML,CSS and Java Script in my second semester which was in my curriculum.
-        </p>
     </main>
     <hr>
     <footer>
@@ -112,21 +166,20 @@
             </div>
             <div class="logo">
                 <a href="https://github.com/punithsai2006">
-                    <img src="github.png" alt="Git hub">
+                    <img src="github.png" alt="GitHub">
                 </a>
                 <a href="https://www.instagram.com/i_am_punith_2006/">
                     <img src="insta.jpeg" alt="Instagram">
                 </a>
                 <a href="https://www.linkedin.com/in/punith-sai-nallapaneni-05841331b/">
-                    <img src="linkedin.png" alt="Linkedin">
+                    <img src="linkedin.png" alt="LinkedIn">
                 </a>
                 <a href="https://www.hackerrank.com/profile/punithsain">
-                    <img src="hackerrank.png" alt="Hackeer rank">
+                    <img src="hackerrank.png" alt="HackerRank">
                 </a>
-                <p>© 2025 My Portfolio</p>
             </div>
+            <p>© 2025 My Portfolio</p>
         </nav>
-        
     </footer>
 </body>
 </html>
