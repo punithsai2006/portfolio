@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punith Sai | Portfolio</title>
     <style>
-        body {
-            width: 100%;
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         h2 {
             color: orange;
         }
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 20px 7px;
+            padding: 10px 5%;
+            background: white;
         }
+
         .nav-left img {
-            width: 50%;
+            width: 150px;
         }
+
         .nav-right a {
             text-decoration: none;
             color: black;
             font-size: 16px;
-            margin: 5px;
+            margin: 10px;
+            transition: 0.3s;
         }
+
         .nav-right a:hover {
             color: orange;
         }
-        .intro {
+
+        main {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            max-width: 1000px;
-            padding: 50px;
+            text-align: center;
+            padding: 20px;
         }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            gap: 20px;
+        }
+
         .basic {
-            margin-left: 40px;
+            max-width: 400px;
+        }
+
+        .basic h1{
+            padding-bottom: 13px;
+        }
+
+        .basic h3{
+            padding-bottom: 13px;
         }
         .basic button {
-            border: 1px black solid;
+            border: 1px solid black;
             border-radius: 25px;
             padding: 15px;
             background-color: orange;
-            transition: 1s;
-            opacity: 0.9;
+            transition: 0.3s;
             cursor: pointer;
             font-weight: bold;
+            margin-top: 13px;
         }
+
         .basic button:hover {
             background-color: white;
         }
@@ -61,62 +95,72 @@
             text-decoration: none;
             color: black;
         }
+
         .me img {
-            width: 300px;
+            width: 250px;
             border-radius: 50%;
-            box-shadow: 5px 5px 5px 5px lightblue;
+            box-shadow: 5px 5px 5px lightblue;
         }
-        .form {
-            width: 90%;
-            max-width: 400px;
-            margin: auto;
-            padding: 30px;
-            background: rgb(234, 154, 7, 0.3);
-            border-radius: 8px;
-        }
-        .cm {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid black;
+
+        footer {
             background: white;
-            color: white;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-top: 5px;
-        }
-        .submit-btn {
-            background-color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
-            width: 417px;
-            margin-top: 10px;
-        }
-        .submit-btn:hover {
-            background-color: rgb(234, 154, 7, 0.6);
-        }
-        .foot {
             text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
         }
-        .foot .logo img {
+
+        .foot h4{
+            padding-bottom: 10px;
+        }
+
+        .foot p{
+            padding-top: 10px;
+        }
+        .logo a{
+            text-decoration: none;
+        }
+        .logo a img {
             width: 30px;
+            margin: 0 10px;
             border-radius: 50%;
-            margin-right: 15px;
             transition: transform 0.3s;
         }
-        .foot .logo img:hover {
-            transform: scale(1.5);
+
+        .logo a img:hover {
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-left img {
+                width: 120px;
+            }
+
+            .nav-right {
+                margin-top: 10px;
+            }
+
+            .intro {
+                flex-direction: column;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <img src="portfoilio.png">
+                <img src="portfoilio.png" alt="Logo">
             </div>
             <div class="nav-right">
                 <a href="about.html">About Me</a>
@@ -128,40 +172,38 @@
     </header>
     <hr>
     <main>
-        <nav class="intro" id="home">
+        <section class="intro">
             <div class="me">
-                <img src="me.jpg">
+                <img src="me.jpg" alt="Profile Picture">
             </div>
             <div class="basic">
-                <h1>Hello! This is Punith sai</h1>
+                <h1>Hello! This is Punith Sai</h1>
                 <h3>A Bit about me</h3>
                 <p>I am currently a UG student at Amrita University.</p>
-                <button><a href="basic resume.pdf" target="_blank">Resume</a></button>
+                <p>I am a passionate Computer Science Engineering student with a strong foundation in programming, algorithms, and software development.</p>
+                <button><a href="basic_resume.pdf" target="_blank">Resume</a></button>
             </div>
-        </nav>
+        </section>
     </main>
     <hr>
-    <footer>
-        <nav class="foot">
-            <div class="title">
-                <h4>Stay connected with me:</h4>
-            </div>
-            <div class="logo">
-                <a href="https://github.com/punithsai2006">
-                    <img src="github.png" alt="Git hub">
-                </a>
-                <a href="https://www.instagram.com/i_am_punith_2006/">
-                    <img src="insta.jpeg" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/punith-sai-nallapaneni-05841331b/">
-                    <img src="linkedin.png" alt="Linkedin">
-                </a>
-                <a href="https://www.hackerrank.com/profile/punithsain">
-                    <img src="hackerrank.png" alt="Hackeer rank">
-                </a>
-                <p>© 2025 My Portfolio</p>
-            </div>
-        </nav>
+    <footer class="foot">
+        <h4>Stay connected with me:</h4>
+        <div class="logo">
+            <a href="https://github.com/punithsai2006">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/i_am_punith_2006/">
+                <img src="insta.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/punith-sai-nallapaneni-05841331b/">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.hackerrank.com/profile/punithsain">
+                <img src="hackerrank.png" alt="HackerRank">
+            </a>
+        </div>
+        <p>&copy; 2025 My Portfolio</p>
     </footer>
 </body>
+
 </html>
