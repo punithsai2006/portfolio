@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punith Sai | Portfolio</title>
     <style>
-        body {
-            width: 100%;
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         h2 {
             color: orange;
-            margin-left: 30px;
         }
 
         .navbar {
@@ -23,7 +28,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px 5%;
-            background: #fff;
+            background: white;
         }
 
         .nav-left img {
@@ -42,31 +47,73 @@
             color: orange;
         }
 
-        .intro {
+        footer {
+            background: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .foot h4 {
+            padding-bottom: 10px;
+        }
+
+        .foot p {
+            padding-top: 10px;
+        }
+
+        .logo {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo a img {
+            width: 30px;
+            margin: 0 10px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .logo a img:hover {
+            transform: scale(1.2);
+        }
+
+        main {
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            max-width: 1000px;
-            padding: 50px;
+            max-width: 1200px;
+            padding: 40px;
         }
 
         .skills {
             text-align: center;
+            width: 100%;
         }
 
         .skills-container {
             display: flex;
             justify-content: center;
-            gap: 50px;
+            gap: 40px;
             margin: 20px;
+            flex-wrap: wrap;
         }
 
-        .s1, .s2 {
-            width: 200px;
+        .s1,
+        .s2,
+        .s3 {
+            width: 250px;
             padding: 20px;
-            border-radius: 10%;
-            box-shadow: 5px 5px 5px 5px lightblue;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px lightblue;
+            background: #f9f9f9;
         }
 
         .skill-list {
@@ -75,44 +122,22 @@
         }
 
         li {
-            padding-bottom: 15px;
-        }
-
-        footer {
-            position: relative;
-            text-align: center;
-            background-color: white;
-        }
-
-        .logo {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-
-        .logo a img {
-            width: 30px;
-            border-radius: 50%;
-            transition: transform 0.3s;
-        }
-
-        .logo a img:hover {
-            transform: scale(1.5);
+            padding-bottom: 10px;
         }
 
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
-                text-align: center;
+                align-items: center;
             }
 
             .nav-right {
                 flex-direction: column;
                 align-items: center;
             }
+        }
 
+        @media (max-width: 600px) {
             .skills-container {
                 flex-direction: column;
                 align-items: center;
@@ -120,6 +145,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -133,14 +159,15 @@
                 <a href="contact.html">Contact Me</a>
             </div>
         </nav>
+        <hr>
     </header>
-    <hr>
+
     <main>
-        <nav class="skills" id="skill">
+        <section class="skills" id="skill">
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="s1">
-                    <h4>Programming</h4>
+                    <h4>Programming</h4><br>
                     <ul class="skill-list">
                         <li>Python</li>
                         <li>Java</li>
@@ -148,18 +175,25 @@
                     </ul>
                 </div>
                 <div class="s2">
-                    <h4>Web Development</h4>
+                    <h4>Web Development</h4><br>
                     <ul class="skill-list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
                 </div>
+                <div class="s3">
+                    <h4>Tools & Technologies</h4><br>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+        </section>
     </main>
-    <hr>
     <footer>
+        <hr><br>
         <nav class="foot">
             <div class="title">
                 <h4>Stay connected with me:</h4>
@@ -182,4 +216,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
