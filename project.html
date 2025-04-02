@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punith Sai | Portfolio</title>
     <style>
-        body {
-            width: 100%;
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            text-align: center;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         h2 {
@@ -42,6 +47,50 @@
             color: orange;
         }
 
+        footer {
+            background: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .foot h4 {
+            padding-bottom: 10px;
+        }
+
+        .foot p {
+            padding-top: 10px;
+        }
+
+        .logo {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo a img {
+            width: 30px;
+            margin: 0 10px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .logo a img:hover {
+            transform: scale(1.2);
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
         .projects-container {
             display: flex;
             flex-wrap: wrap;
@@ -49,9 +98,10 @@
             gap: 40px;
         }
 
-        #project h2{
+        #project h2 {
             margin-top: 20px;
         }
+
         .project-item-1 img {
             height: 200px;
             width: 200px;
@@ -59,29 +109,6 @@
             max-width: 100%;
         }
 
-        footer {
-            position: relative;
-            text-align: center;
-        }
-
-        .foot {
-            text-align: center;
-        }
-
-        .foot .logo a {
-            text-decoration: none;
-        }
-
-        .foot .logo img {
-            width: 30px;
-            border-radius: 50%;
-            margin-right: 15px;
-            transition: transform 0.3s;
-        }
-
-        .foot .logo img:hover {
-            transform: scale(1.5);
-        }
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -111,20 +138,23 @@
         </nav>
     </header>
     <hr>
-    <nav class="project" id="project">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project-item-1">
-                <h3>Project</h3>
-                <p>Number Guessing Game</p>
-                <a href="https://githubtocolab.com/punithsai2006/project/blob/main/Numbergussinggame.ipynb" target="_blank"><img src="num game.jpg" class="proimg"
-                        alt="Number Guessing Game project"></a>
+    <div class="main-content">
+        <nav class="project" id="project">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-item-1">
+                    <br>
+                    <p>Number Guessing Game</p>
+                    <br>
+                    <a href="https://githubtocolab.com/punithsai2006/project/blob/main/Numbergussinggame.ipynb" target="_blank"><img src="num game.jpg" class="proimg" alt="Number Guessing Game project"></a>
+                </div>
             </div>
-        </div>
-        <p>Currently, I am working on a Java-based project for Semester 2.</p>
-    </nav>
-    <hr>
+            <br>
+            <p>Currently, I am working on a Java-based project for Semester 2.</p>
+        </nav>
+    </div>
     <footer>
+        <hr><br>
         <nav class="foot">
             <div class="title">
                 <h4>Stay connected with me:</h4>
@@ -142,8 +172,8 @@
                 <a href="https://www.hackerrank.com/profile/punithsain">
                     <img src="hackerrank.png" alt="Hackeer rank">
                 </a>
-                <p>© 2025 My Portfolio</p>
             </div>
+            <p>© 2025 My Portfolio</p>
         </nav>
     </footer>
 </body>
