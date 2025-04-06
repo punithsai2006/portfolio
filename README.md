@@ -4,7 +4,7 @@ Welcome to my portfolio README file!
 
 **Live Website:** [punithsai2006.github.io/portfolio](https://punithsai2006.github.io/portfolio/)
 
-This is my Portfolio created using HTML, CSS and Java Script.
+This is my Portfolio created using HTML and CSS.
 
 I have divided my web site into 5 pages:
 
