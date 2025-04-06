@@ -1,13 +1,13 @@
-# 🧑‍💼 Punith Sai – Personal Portfolio
+## Punith Sai – Portfolio
 
-Welcome to my personal portfolio website!  
+Welcome to my portfolio website!  
 This site serves as a digital representation of my profile, including my skills, projects, education, and contact details.
 
-🔗 **Live Website:** [punithsai2006.github.io/portfolio](https://punithsai2006.github.io/portfolio/)
+**Live Website:** [punithsai2006.github.io/portfolio](https://punithsai2006.github.io/portfolio/)
 
 ---
 
-## 📝 About the Project
+##  About the Project
 
 This portfolio is a responsive, website designed to present my:
 
@@ -20,17 +20,17 @@ It is hosted on GitHub Pages for free and easy accessibility.
 
 ---
 
-## ✨ Features
+##  Features
 
-- ⚡ Smooth scrolling and responsive layout
-- 🖼️ Project showcase section
-- 📱 Mobile-friendly design
-- 📧 Contact form with direct email link
-- 🌐 GitHub Pages hosting
+-  Smooth scrolling and responsive layout
+-  Project showcase section
+-  Mobile-friendly design
+-  Contact form with direct email link
+-  GitHub Pages hosting
 
 ---
 
-## 🛠 Built With
+##  Built With
 
 - **HTML**
 - **CSS**
@@ -39,7 +39,7 @@ It is hosted on GitHub Pages for free and easy accessibility.
 
 ---
 
-##📁 Folder Structure
+## Folder Structure
 
 portfolio/
 │
@@ -51,12 +51,12 @@ portfolio/
 
 ---
 
-##📬 Contact
+## Contact
 Made by Punith Sai
 Feel free to reach out to me:
 
-- 📧 Email: punithsai2006@gmail.com
-- 💼 LinkedIn: linkedin.com/in/punithsai 
-- 💻 GitHub: github.com/punithsai2006
+-  Email: punithsai2006@gmail.com
+-  LinkedIn: linkedin.com/in/punithsai 
+-  GitHub: github.com/punithsai2006
 
 ---
