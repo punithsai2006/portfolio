@@ -14,69 +14,76 @@ I have divided my web site into 5 pages:
 - 4)Projects
 - 5)Contact me
 
-##  Home:
+##  🏠 Home:
 
--  In this page I gave the nav bars to About me, Skills, Projects and Contact me pages.
--  I placed my photo and gave basic information about me.
--  I given my Resume here.
--  I placed my git hub, linked in, Instagram and Hacker rank handle links.
-
----
-
-##  About me:
-
--  In this page I gave the nav bars to Home, Skills, Projects and Contact me pages.
--  Personal bio and education details.
--  I placed my git hub, linked in, Instagram and Hacker rank handle links.
+-  -  Navigation links to About Me, Skills, Projects and Contact me.
+-  Displayed my photo along with a short introduction.
+-  Resume available for download/viewing.
+-  Social media and coding platform links:
+	-  GitHub
+	-  LinkedIn
+	-  Instagram
+	-  Hacker Rank
 
 ---
 
-##  Skills:
+##  👤 About me:
 
--  In this page I gave the nav bars to Home, About me, Projects and Contact me pages.
--  Here I had given coding skills, Tools & technologies I work with
+-  Navigation links to Home, Skills, Projects and Contact me pages.
+-  A brief personal bio and educational background.
+-  Social media and platform handles repeated for easy access.
 
--  Programming
+---
+
+##  💻 Skills:
+
+-  Navigation links to Home, About me, Projects and Contact me pages.
+-  Highlighted technical skills and tools I work with:
+-  Programming Languages:
 	-  Python
 	-  Java
 	-  C (Basics)
--  Web Development
+-  Web Development:
 	-  HTML
 	-  CSS
 	-  JavaScript
--  Tools & Technologies
+-  Tools & Technologies:
 	-  Git & GitHub
 	-  VS Code
--  I placed my git hub, linked in, Instagram and Hacker rank handle links.
+-  Social media and platform handles repeated for easy access.
 
 ---
 
-##  Projects:
--  In this page I gave the nav bars to Home, About me, Skills and Contact me pages.
+##  🛠 Projects:
+-  Navigation links to Home, About Me, Skills, and Contact me.
+-  Showcased two completed projects and one ongoing project.
 -  I had done two projects one is using python and another is using HTML, CSS and JS. Currently working on my third project using Java.
--  Project 1:
-	-  This a game(Number Guessing Game) code written with python.
+-  🔢 Project 1 – Number Guessing Game (Python):
+	-  A terminal-based game written in Python.
 		-  In this I have given an other page which consists of the rules of this game and a button to play game(Which redirects to the Google Colab).
 
--  Project 2:
-	-  This is a simple calculator made using HTML, CSS and JS.
-		-  In this I have given an other page which consists of two buttons 
-			-  1)Calculator(Which redirects to the calculator).
-			-  2)Code(Which redirects to the GitHub page where the code is present).
--  I placed my git hub, linked in, Instagram and Hacker rank handle links.
+-  ➗ Project 2 – Simple Calculator (HTML, CSS, JS):
+	-  A functional calculator built with frontend technologies.
+		-  A separate page includes two buttons: 
+			-  1)Calculator(opens the calculator).
+			-  2)Code(redirects to the GitHub repo).
+-  Social media and platform handles repeated for easy access.
 
 ---
 
-##  Contact me:
+##  📞 Contact me:
 
--  In this page I gave the nav bars to Home, About me, Skills and Project pages.
--  This contain my contact details(phone number, Email address).
--  Form to provide the clints details to hire.
--  I placed my git hub, linked in, Instagram and Hacker rank handle links.
+-  Navigation links to Home, About Me, Skills, and Projects.
+-  Contact details:
+	-  Phone number
+	-  Email address
+-  A contact form for potential clients or employers to reach out.
+-  Social media and platform handles repeated for easy access.
+
 
 ---
 
-##  Features
+##  ✨ Features
 
 -  Smooth scrolling and responsive layout
 -  Project showcase section
@@ -86,7 +93,7 @@ I have divided my web site into 5 pages:
 
 ---
 
-##  Built With
+##  🛠 Built With
 
 - **HTML**
 - **CSS**
@@ -95,7 +102,7 @@ I have divided my web site into 5 pages:
 
 ---
 
-## Folder Structure
+## 📁 Folder Structure
 
 -  index.html
 -  about.html
