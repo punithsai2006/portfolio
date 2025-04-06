@@ -16,7 +16,7 @@ I have divided my web site into 5 pages:
 
 ##  🏠 Home:
 
--  -  Navigation links to About Me, Skills, Projects and Contact me.
+-  Navigation links to About Me, Skills, Projects and Contact me.
 -  Displayed my photo along with a short introduction.
 -  Resume available for download/viewing.
 -  Social media and coding platform links:
