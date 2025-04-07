@@ -25,11 +25,17 @@
         }
 
         .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 5%;
-            background: white;
+            background: rgb(255, 255, 255);
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
         }
 
         .nav-left img {
@@ -58,6 +64,7 @@
             padding: 15px 0;
             width: 100%;
             margin-top: auto;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
         }
 
         .foot h4 {
@@ -81,6 +88,11 @@
             transform: scale(1.2);
         }
 
+        main {
+            margin-top: 100px;
+            padding-top: 20px;
+        }
+
         .main-content {
             flex: 1;
             display: flex;
@@ -92,7 +104,7 @@
 
         .projects-container {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: flex;
             justify-content: center;
             gap: 40px;
         }
@@ -103,11 +115,14 @@
             background: #f9f9f9;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
+            width: 50%;
+            
         }
 
-        .project-item p{
+        .project-item p {
             padding-bottom: 8px;
         }
+
         .project-item:hover {
             transform: scale(1.05);
             box-shadow: 5px 5px 10px lightblue;
@@ -120,9 +135,10 @@
             max-width: 100%;
         }
 
-        #cal{
+        #cal {
             width: 150px;
         }
+
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
@@ -140,6 +156,9 @@
             .projects-container {
                 flex-direction: column;
                 align-items: center;
+            }
+            main{
+                padding: 40px 20px 20px;
             }
         }
     </style>
@@ -159,7 +178,7 @@
             </div>
         </nav>
     </header>
-    <hr>
+
     <main>
         <div class="main-content">
             <nav class="project" id="project">
@@ -185,8 +204,8 @@
             </nav>
         </div>
     </main>
+
     <footer>
-        <hr><br>
         <nav class="foot">
             <div class="title">
                 <h4>Stay connected with me:</h4>
