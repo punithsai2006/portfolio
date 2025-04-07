@@ -17,14 +17,13 @@ I have divided my portfolio into 5 pages:
 ---
 
 ## Code Structure(Each page):
--  [<!DOCTYPE html> + <html>]
+### <!DOCTYPE html> + <html>	
 	-  Starts with the standard HTML5 declaration.
 
--  [<<head>>]
+### <head>
 	-  Page title (<title>)
 	-  Internal styling (<style>)
-
--  [<body>]
+### <body>
 	-  Contains all the main content, split into:
 		-  <header> – Top navigation and site title
 		-  <main> – Main content of each page
