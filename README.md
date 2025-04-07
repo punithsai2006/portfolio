@@ -27,9 +27,9 @@ I have divided my portfolio into 5 pages:
 
 - Body tag (<body>)
 	-  Contains all the main content, split into:
-		–  Top navigation and site title (<header>)
-		–  Main content of each page (<main>)
-		–  Contact info and social links (<footer>)
+		–  Top navigation and site title (<header>).
+		–  Main content of each page (<main>).
+		–  Contact info and social links (<footer>).
 
 ---
 
