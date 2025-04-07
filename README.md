@@ -20,7 +20,7 @@ I have divided my portfolio into 5 pages:
 -  [<!DOCTYPE html> + <html>]
 	-  Starts with the standard HTML5 declaration.
 
--  [<head>]
+-  [<<head>>]
 	-  Page title (<title>)
 	-  Internal styling (<style>)
 
