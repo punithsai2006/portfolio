@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punith Sai | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punith Sai | Skills</title>
     <style>
         * {
             margin: 0;
@@ -17,59 +17,126 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            padding-top: 80px;
         }
 
         h2 {
             color: orange;
+            margin-bottom: 20px;
+            font-size: 28px;
+            text-align: center;
         }
 
         .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 5%;
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
         }
 
         .nav-left img {
             width: 150px;
         }
 
+        .nav-right {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
         .nav-right a {
             text-decoration: none;
             color: black;
             font-size: 16px;
-            margin: 10px;
-            transition: 0.3s;
+            transition: color 0.3s;
         }
 
         .nav-right a:hover {
             color: orange;
         }
 
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding-top: 60px;
+            width: 100%;
+        }
+
+        .skills {
+            text-align: center;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: #f9f9f9;
+            width: 260px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(173, 216, 230, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 12px rgba(173, 216, 230, 0.6);
+        }
+
+        .skill-card h4 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding-top: 10px;
+            text-align: left;
+        }
+
+        .skill-list li {
+            padding: 6px 0;
+            font-size: 16px;
+        }
+
         footer {
             background: white;
             text-align: center;
-            padding: 15px 0;
-            width: 100%;
-            margin-top: auto;
+            padding: 20px 10px;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
         }
 
         .foot h4 {
-            padding-bottom: 10px;
+            margin-bottom: 10px;
         }
 
         .foot p {
             padding-top: 10px;
+            font-size: 14px;
+        }
+
+        .foot a {
+            text-decoration: none;
         }
 
         .logo {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .logo a {
-            text-decoration: none;
+            padding: 10px 0;
         }
 
         .logo a img {
@@ -83,76 +150,35 @@
             transform: scale(1.2);
         }
 
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 1200px;
-            padding: 40px;
-        }
-
-        .skills {
-            text-align: center;
-            width: 100%;
-        }
-
-        .skills-container {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin: 20px;
-            flex-wrap: wrap;
-        }
-
-        .s1,
-        .s2,
-        .s3 {
-            width: 250px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 3px lightblue;
-            background: #f9f9f9;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .s1:hover,
-        .s2:hover,
-        .s3:hover{
-            transform: scale(1.05);
-            box-shadow: 5px 5px 10px lightblue;
-        }
-
-        .skill-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            padding-bottom: 10px;
-        }
-
         @media (max-width: 768px) {
             .navbar {
                 flex-direction: column;
                 text-align: center;
+                padding: 15px;
             }
 
             .nav-left img {
                 width: 120px;
+                margin-bottom: 10px;
             }
 
-            .nav-right {
-                margin-top: 10px;
+            h2 {
+                font-size: 24px;
             }
-        }
+            main{
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+            .skill-card {
+                width: 90%;
+            }
 
-        @media (max-width: 600px) {
             .skills-container {
-                flex-direction: column;
-                align-items: center;
+                gap: 20px;
             }
+            
         }
+
     </style>
 </head>
 
@@ -169,31 +195,30 @@
                 <a href="contact.html">Contact Me</a>
             </div>
         </nav>
-        <hr>
     </header>
 
     <main>
         <section class="skills" id="skill">
             <h2>Skills</h2>
             <div class="skills-container">
-                <div class="s1">
-                    <h4>Programming</h4><br>
+                <div class="skill-card">
+                    <h4>Programming</h4>
                     <ul class="skill-list">
                         <li>Python</li>
                         <li>Java</li>
                         <li>C (Basics)</li>
                     </ul>
                 </div>
-                <div class="s2">
-                    <h4>Web Development</h4><br>
+                <div class="skill-card">
+                    <h4>Web Development</h4>
                     <ul class="skill-list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
                 </div>
-                <div class="s3">
-                    <h4>Tools & Technologies</h4><br>
+                <div class="skill-card">
+                    <h4>Tools & Technologies</h4>
                     <ul class="skill-list">
                         <li>Git & GitHub</li>
                         <li>VS Code</li>
@@ -202,28 +227,24 @@
             </div>
         </section>
     </main>
-    <footer>
-        <hr><br>
-        <nav class="foot">
-            <div class="title">
-                <h4>Stay connected with me:</h4>
-            </div>
-            <div class="logo">
-                <a href="https://github.com/punithsai2006">
-                    <img src="github.png" alt="GitHub">
-                </a>
-                <a href="https://www.instagram.com/i_am_punith_2006/">
-                    <img src="insta.jpeg" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/punith-sai-nallapaneni-05841331b/">
-                    <img src="linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://www.hackerrank.com/profile/punithsain">
-                    <img src="hackerrank.png" alt="HackerRank">
-                </a>
-            </div>
-            <p>© 2025 My Portfolio</p>
-        </nav>
+
+    <footer class="foot">
+        <h4>Stay connected with me:</h4>
+        <div class="logo">
+            <a href="https://github.com/punithsai2006">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://www.instagram.com/i_am_punith_2006/">
+                <img src="insta.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/punith-sai-nallapaneni-05841331b/">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.hackerrank.com/profile/punithsain">
+                <img src="hackerrank.png" alt="HackerRank">
+            </a>
+        </div>
+        <p>© 2025 My Portfolio</p>
     </footer>
 </body>
 
