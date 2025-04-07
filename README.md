@@ -18,18 +18,18 @@ I have divided my portfolio into 5 pages:
 
 ## Code Structure(Each page):
 
-## <!DOCTYPE html> + <html>	
+## Root tag(<!DOCTYPE html> + <html>)
 	-  Starts with the standard HTML5 declaration.
 
 ---
 
-## <head>
+## Head tag(<head>)
 	-  Page title (<title>)
 	-  Internal styling (<style>)
 
 ---
 
-## <body>
+## Body tag(<body>)
 	-  Contains all the main content, split into:
 		-  <header> – Top navigation and site title
 		-  <main> – Main content of each page
