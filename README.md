@@ -17,17 +17,19 @@ I have divided my portfolio into 5 pages:
 ---
 
 ## Code Structure(Each page):
--  <!DOCTYPE html> + <html>
-	-I started with a standard HTML5 declaration.
+-  <!DOCTYPE html>+
+   <html>
+	-  Starts with the standard HTML5 declaration.
 
 -  <head>
-	-  The page title(<title>)
-	-  inline styling(<style>)
+	-  Page title (<title>)
+	-  Internal styling (<style>)
+
 -  <body>
-	-  The body of my portfolio contains all the main content, split into the following sections:
-		-  header(<header>)
-		-  main(<main>)
-		-  footer(<footer>)
+	-  Contains all the main content, split into:
+		-  <header> – Top navigation and site title
+		-  <main> – Main content of each page
+		-  <footer> – Contact info and social links
 
 ---
 
