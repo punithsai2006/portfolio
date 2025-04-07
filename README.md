@@ -6,17 +6,34 @@ Welcome to my portfolio README file!
 
 This is my Portfolio created using HTML and CSS.
 
-I have divided my web site into 5 pages:
+I have divided my portfolio into 5 pages:
 
-- 1)Home
-- 2)About me
-- 3)Skills
-- 4)Projects
-- 5)Contact me
+ 1)Home
+ 2)About me
+ 3)Skills
+ 4)Projects
+ 5)Contact me
 
-##  🏠 Home:
+---
 
--  Navigation links to About Me, Skills, Projects and Contact me.
+## Code Structure(Each page):
+  <!DOCTYPE html> + <html>
+	-I started with a standard HTML5 declaration.
+
+  <head>
+	-  The page title(<title>)
+	-  inline styling(<style>)
+  <body>
+	-  The body of my portfolio contains all the main content, split into the following sections:
+		-  header(<header>)
+		-  main(<main>)
+		-  footer(<footer>)
+
+---
+
+##  Home(index.html)
+
+-  -  Navigation links to About Me, Skills, Projects and Contact me.
 -  Displayed my photo along with a short introduction.
 -  Resume available for download/viewing.
 -  Social media and coding platform links:
@@ -27,7 +44,7 @@ I have divided my web site into 5 pages:
 
 ---
 
-##  👤 About me:
+##  About me(about.html)
 
 -  Navigation links to Home, Skills, Projects and Contact me pages.
 -  A brief personal bio and educational background.
@@ -35,7 +52,7 @@ I have divided my web site into 5 pages:
 
 ---
 
-##  💻 Skills:
+##  Skills(skill.html)
 
 -  Navigation links to Home, About me, Projects and Contact me pages.
 -  Highlighted technical skills and tools I work with:
@@ -54,15 +71,16 @@ I have divided my web site into 5 pages:
 
 ---
 
-##  🛠 Projects:
+##  Projects(project.html)
+
 -  Navigation links to Home, About Me, Skills, and Contact me.
 -  Showcased two completed projects and one ongoing project.
 -  I had done two projects one is using python and another is using HTML, CSS and JS. Currently working on my third project using Java.
--  🔢 Project 1 – Number Guessing Game (Python):
+-  Project 1 – Number Guessing Game (Python):
 	-  A terminal-based game written in Python.
 		-  In this I have given an other page which consists of the rules of this game and a button to play game(Which redirects to the Google Colab).
 
--  ➗ Project 2 – Simple Calculator (HTML, CSS, JS):
+-  Project 2 – Simple Calculator (HTML, CSS, JS):
 	-  A functional calculator built with frontend technologies.
 		-  A separate page includes two buttons: 
 			-  1)Calculator(opens the calculator).
@@ -71,7 +89,7 @@ I have divided my web site into 5 pages:
 
 ---
 
-##  📞 Contact me:
+##  Contact me(contact.html)
 
 -  Navigation links to Home, About Me, Skills, and Projects.
 -  Contact details:
@@ -83,17 +101,23 @@ I have divided my web site into 5 pages:
 
 ---
 
-##  ✨ Features
+##  Styling
+
+-  I have used internal styling for the quick adjustments for every page even there are similar codes in every page for my convince as I am beginner to the html and css.
+
+---  
+
+##  Features
 
 -  Smooth scrolling and responsive layout
 -  Project showcase section
--  Mobile-friendly design
+-  Mobile and tablet-friendly design
 -  Contact form with direct email link
 -  GitHub Pages hosting
 
 ---
 
-##  🛠 Built With
+##  Built With
 
 - **HTML**
 - **CSS**
@@ -102,7 +126,7 @@ I have divided my web site into 5 pages:
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 -  index.html
 -  about.html
@@ -111,5 +135,12 @@ I have divided my web site into 5 pages:
 -  contact.html
 -  assets          #Images, icons, and screenshots  
 -  README.md       # You’re reading it 
+
+---
+
+## Note
+
+-  I kept my full efforts while doing this project, I have learnt many new properties and attributes in Html and css which are very useful in the future web developing activities.
+-  I’m planning to improve it over time by adding better responsiveness, semantic HTML, and cleaner separation of structure and styling.
 
 ---
