@@ -8,22 +8,22 @@ This is my Portfolio created using HTML and CSS.
 
 I have divided my portfolio into 5 pages:
 
- 1)Home
- 2)About me
- 3)Skills
- 4)Projects
- 5)Contact me
+-  1)Home
+-  2)About me
+-  3)Skills
+-  4)Projects
+-  5)Contact me
 
 ---
 
 ## Code Structure(Each page):
-  <!DOCTYPE html> + <html>
+-  <!DOCTYPE html> + <html>
 	-I started with a standard HTML5 declaration.
 
-  <head>
+-  <head>
 	-  The page title(<title>)
 	-  inline styling(<style>)
-  <body>
+-  <body>
 	-  The body of my portfolio contains all the main content, split into the following sections:
 		-  header(<header>)
 		-  main(<main>)
@@ -33,7 +33,7 @@ I have divided my portfolio into 5 pages:
 
 ##  Home(index.html)
 
--  -  Navigation links to About Me, Skills, Projects and Contact me.
+-  Navigation links to About Me, Skills, Projects and Contact me.
 -  Displayed my photo along with a short introduction.
 -  Resume available for download/viewing.
 -  Social media and coding platform links:
