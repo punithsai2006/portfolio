@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punith Sai | Portfolio</title>
     <style>
         * {
@@ -17,6 +17,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            padding-top: 80px;
         }
 
         h2 {
@@ -24,11 +25,17 @@
         }
 
         .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 5%;
             background: white;
+            z-index: 1000;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
         }
 
         .nav-left img {
@@ -39,7 +46,7 @@
             text-decoration: none;
             color: black;
             font-size: 16px;
-            margin: 10px;
+            margin: 0 10px;
             transition: 0.3s;
         }
 
@@ -47,30 +54,107 @@
             color: orange;
         }
 
-        
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            max-width: 900px;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .me img {
+            width: 250px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px lightblue;
+            transition: transform 0.3s;
+        }
+
+        .me img:hover {
+            transform: scale(1.05);
+        }
+
+        .basic {
+            max-width: 400px;
+        }
+
+        .basic h1 {
+            font-size: 36px;
+            padding-bottom: 10px;
+        }
+
+        .basic strong {
+            color: orange;
+        }
+
+        .basic h3 {
+            padding-bottom: 12px;
+            font-weight: normal;
+        }
+
+        .basic p {
+            padding-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .basic button {
+            border: none;
+            border-radius: 25px;
+            padding: 12px 20px;
+            background-color: orange;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .basic button:hover {
+            background-color: white;
+            transform: scale(1.05);
+            border: 1px solid orange;
+        }
+
+        .basic a {
+            text-decoration: none;
+            color: black;
+        }
+
         footer {
             background: white;
             text-align: center;
-            padding: 15px 0;
-            width: 100%;
+            padding: 20px 10px;
             margin-top: auto;
+            box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .foot h4{
+        .foot h4 {
             padding-bottom: 10px;
         }
 
-        .foot p{
+        .foot p {
             padding-top: 10px;
+            font-size: 14px;
         }
 
-        .logo{
-            padding-top: 10px;
-            padding-bottom: 10px;
+        .logo {
+            padding: 10px 0;
         }
-        .logo a{
+
+        .logo a {
             text-decoration: none;
         }
+
         .logo a img {
             width: 30px;
             margin: 0 10px;
@@ -80,68 +164,6 @@
 
         .logo a img:hover {
             transform: scale(1.2);
-        }
-        main {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-
-        .intro {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            max-width: 900px;
-            gap: 20px;
-        }
-
-        .basic {
-            max-width: 400px;
-        }
-
-        .basic h1{
-            padding-bottom: 13px;
-            font-size: 40px;
-        }
-
-        .basic strong{
-            color: orange;
-        }
-        .basic h3{
-            padding-bottom: 13px;
-        }
-        .basic button {
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 15px;
-            background-color: orange;
-            transition: 0.3s;
-            cursor: pointer;
-            font-weight: bold;
-            margin-top: 13px;
-        }
-
-        .basic button:hover {
-            background-color: white;
-            transform: scale(1.1);
-        }
-
-        .basic a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .me img {
-            width: 250px;
-            border-radius: 50%;
-            box-shadow: 5px 5px 5px lightblue;
-            transition: 0.3s;
         }
 
         @media (max-width: 768px) {
@@ -158,12 +180,25 @@
                 margin-top: 10px;
             }
 
-            .intro {
-                flex-direction: column;
+            body {
+                padding-top: 130px;
             }
 
-            .submit-btn {
-                width: 100%;
+            .intro {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .me img {
+                width: 200px;
+            }
+
+            .basic h1 {
+                font-size: 30px;
+            }
+
+            .basic p {
+                font-size: 15px;
             }
         }
     </style>
@@ -173,7 +208,7 @@
     <header>
         <nav class="navbar">
             <div class="nav-left">
-                <img src="portfoilio.png" alt="Logo">
+                <img src="portfoilio.png" alt="Logo" />
             </div>
             <div class="nav-right">
                 <a href="about.html">About Me</a>
@@ -183,36 +218,39 @@
             </div>
         </nav>
     </header>
-    <hr>
+
     <main>
         <section class="intro">
             <div class="me">
-                <img src="me2.jpg" alt="Profile Picture">
+                <img src="me2.jpg" alt="Profile Picture" />
             </div>
             <div class="basic">
-                <h1>Hello! This is <br><strong>Punith Sai</strong></h1>
+                <h1>Hello! This is <br /><strong>Punith Sai</strong></h1>
                 <h3>A Bit about me</h3>
                 <p>I am currently a UG student at Amrita University.</p>
-                <p>I am a passionate Computer Science Engineering student with a strong foundation in programming, algorithms, and software development.</p>
+                <p>
+                    I am a passionate Computer Science Engineering student with a strong
+                    foundation in programming, algorithms, and software development.
+                </p>
                 <button><a href="basic resume.pdf" target="_blank">Resume</a></button>
             </div>
         </section>
     </main>
-    <hr>
+
     <footer class="foot">
         <h4>Stay connected with me:</h4>
         <div class="logo">
             <a href="https://github.com/punithsai2006">
-                <img src="github.png" alt="GitHub">
+                <img src="github.png" alt="GitHub" />
             </a>
             <a href="https://www.instagram.com/i_am_punith_2006/">
-                <img src="insta.jpeg" alt="Instagram">
+                <img src="insta.jpeg" alt="Instagram" />
             </a>
             <a href="https://www.linkedin.com/in/punith-sai-nallapaneni-05841331b/">
-                <img src="linkedin.png" alt="LinkedIn">
+                <img src="linkedin.png" alt="LinkedIn" />
             </a>
             <a href="https://www.hackerrank.com/profile/punithsain">
-                <img src="hackerrank.png" alt="HackerRank">
+                <img src="hackerrank.png" alt="HackerRank" />
             </a>
         </div>
         <p>&copy; 2025 My Portfolio</p>
